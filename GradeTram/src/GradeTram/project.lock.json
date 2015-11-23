@@ -1024,6 +1024,19 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
+      "RavenDB.Client/3.0.30000": {
+        "frameworkAssemblies": [
+          "System.ComponentModel.Composition"
+        ],
+        "compile": {
+          "lib/net45/Raven.Abstractions.dll": {},
+          "lib/net45/Raven.Client.Lightweight.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Raven.Abstractions.dll": {},
+          "lib/net45/Raven.Client.Lightweight.dll": {}
+        }
+      },
       "System.Collections.Immutable/1.1.36": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
@@ -2031,6 +2044,7 @@
           "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll": {}
         }
       },
+      "RavenDB.Client/3.0.30000": {},
       "System.Collections/4.0.10-beta-23019": {
         "dependencies": {
           "System.Runtime": "4.0.20-beta-23019"
@@ -3937,6 +3951,20 @@
         "tools/install.ps1"
       ]
     },
+    "RavenDB.Client/3.0.30000": {
+      "sha512": "NE692CaE4LpgBDvNVIjtgOWPkvBtsi8P6k4ALOA58zyryPsHA2yHuoKrdzxoPIFFUpq+YJrzmG939K9kf2zGww==",
+      "files": [
+        "RavenDB.Client.3.0.30000.nupkg",
+        "RavenDB.Client.3.0.30000.nupkg.sha512",
+        "RavenDB.Client.nuspec",
+        "lib/net45/Raven.Abstractions.dll",
+        "lib/net45/Raven.Abstractions.pdb",
+        "lib/net45/Raven.Abstractions.xml",
+        "lib/net45/Raven.Client.Lightweight.dll",
+        "lib/net45/Raven.Client.Lightweight.pdb",
+        "lib/net45/Raven.Client.Lightweight.XML"
+      ]
+    },
     "System.Collections/4.0.10-beta-23019": {
       "sha512": "76/FZ9wYhhU6wdNwrB3NiVJ5lpLZnLhS3dbLCOXOSf8NN3KXPrlcm5f2PUeHSJxgu5nP2H8lGLfshIaWq2qSNQ==",
       "files": [
@@ -4877,7 +4905,8 @@
       "Microsoft.AspNet.Mvc >= 6.0.0-beta5",
       "Microsoft.AspNet.Server.IIS >= 1.0.0-beta5",
       "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta5",
-      "Microsoft.AspNet.StaticFiles >= 1.0.0-beta5"
+      "Microsoft.AspNet.StaticFiles >= 1.0.0-beta5",
+      "RavenDB.Client >= 3.0.30000"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
