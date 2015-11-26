@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
+using Raven.Client.Document;
+using GradeTram.Contracts.Documents;
+//using GradeTram.Contracts.Documents;
 
 namespace GradeTram.Controllers
 {
@@ -13,6 +16,19 @@ namespace GradeTram.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            using (var store = new DocumentStore()
+            {
+                Url = "http://localhost:54321",
+                DefaultDatabase = "gradetram"
+            }.Initialize())
+            {
+                var session = store.OpenSession();
+                session.Store(new Driver() { Name = "testowy ziomek", DriverIdentifier = 123, RegisterTime = DateTime.Now });
+                session.SaveChanges();
+                session.Dispose();
+            }
+
+
             return new string[] { "value1", "value2" };
         }
 

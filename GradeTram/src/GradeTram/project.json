@@ -7,20 +7,17 @@
     "Microsoft.AspNet.Server.IIS": "1.0.0-beta5",
     "Microsoft.AspNet.Server.WebListener": "1.0.0-beta5",
     "Microsoft.AspNet.StaticFiles": "1.0.0-beta5",
-    "RavenDB.Client": "3.0.30000"
+    "RavenDB.Client": "3.0.30000",
+    "GradeTram.Data": "1.0.0-*"
   },
 
   "commands": {
-    "web": "Microsoft.AspNet.Hosting --config hosting.ini",
+    "web": "Microsoft.AspNet.Hosting --config hosting.ini"
   },
 
   "frameworks": {
     "dnx451": {
-      "dependencies": {
-        "GradeTram.Contracts": "1.0.0-*"
-      }
-    },
-    "dnxcore50": { }
+    }
   },
 
   "exclude": [
