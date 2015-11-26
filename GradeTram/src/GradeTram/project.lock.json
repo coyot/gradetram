@@ -4908,7 +4908,9 @@
       "Microsoft.AspNet.StaticFiles >= 1.0.0-beta5",
       "RavenDB.Client >= 3.0.30000"
     ],
-    "DNX,Version=v4.5.1": [],
+    "DNX,Version=v4.5.1": [
+      "GradeTram.Contracts >= 1.0.0-*"
+    ],
     "DNXCore,Version=v5.0": []
   }
 }

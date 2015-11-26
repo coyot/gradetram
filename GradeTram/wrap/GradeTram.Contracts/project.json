@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../GradeTram.Contracts/GradeTram.Contracts.csproj",
+      "bin": {
+        "assembly": "../../GradeTram.Contracts/obj/{configuration}/GradeTram.Contracts.dll",
+        "pdb": "../../GradeTram.Contracts/obj/{configuration}/GradeTram.Contracts.pdb"
+      }
+    }
+  }
+}
